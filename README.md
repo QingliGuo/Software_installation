@@ -1,6 +1,8 @@
 # Software_installation
 This repo will record instructions for software installation on the current cluster (Apocrita, QMUL)I am working on.
-## Octopus (With support by Ben Talbot)
+## Octopus
+The installation is supported by Ben Talbot.
+
 + Version 0.6.3
 
 The following commands would help to install Octopus_0.6.3:
