@@ -1,4 +1,7 @@
-# Software_installation
+# Installed Software
++ GATK4
+
+# Installation instructions
 This repo will record instructions for software installation on the current cluster (Apocrita, QMUL) I am working on.
 ## [Octopus](https://github.com/luntergroup/octopus)
 The installation is supported by Ben Talbot.
