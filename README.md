@@ -1,5 +1,5 @@
 # Software_installation
-This repo will record instructions for software installation on the current cluster (Apocrita, QMUL)I am working on.
+This repo will record instructions for software installation on the current cluster (Apocrita, QMUL) I am working on.
 ## Octopus
 The installation is supported by Ben Talbot.
 
