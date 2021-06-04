@@ -1,9 +1,6 @@
-# Installed Software
-+ GATK4
-
 # Installation instructions
 This repo will record instructions for software installation.
-## [Octopus](https://github.com/luntergroup/octopus)
+## 1. [Octopus](https://github.com/luntergroup/octopus)
 The installation is supported by Ben Talbot.
 
 The following commands would help to install Octopus_0.6.3 on Apocrita:
@@ -42,7 +39,7 @@ conda install octopus
 ```
 In UCL COLCC, the installed package is in ~/.conda/envs/oct-env/bin/octopus
 
-## [SigProfilerMatrixGenerator](https://github.com/AlexandrovLab/SigProfilerMatrixGenerator)
+## 2. [SigProfilerMatrixGenerator](https://github.com/AlexandrovLab/SigProfilerMatrixGenerator)
 
 The package installed using pip3.8 on UCL COLCC:
 
