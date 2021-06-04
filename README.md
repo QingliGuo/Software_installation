@@ -59,3 +59,21 @@ python3.8
 ## when this is done, quit the session
 >>> quit()
 ```
+## 3. [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/)
+
+The downloader need to sign via a form here https://www.openbioinformatics.org/annovar/annovar_download_form.php; and the download link will be sent via email by the author.
+
+```
+## login the cluster, make/find a folder where you want to store the data:
+wget http:PATH-SENT-VIA-EMAIL/annovar.latest.tar.gz
+tar -zxvf annovar.latest.tar.gz
+```
+
+Annovar is made of several perl scripts. So once uncompressed the file, we already have it. To use it to annotate or filter variants, we also need to download databases, e.g. the 1000genome data:
+
+```
+cd /PATH-TO-ANNOVAR/annovar
+## -downdb "1000g2015aug" is the database+version we would like to download; humandb is a pre-exisiting folder which contains to-be-downloaded data; -buildver hg19 tells the script which version of genome you want to download
+
+perl annotate_variation.pl -downdb 1000g2015aug humandb -buildver hg19
+```
