@@ -1,5 +1,5 @@
 # Installation instructions
-This repo will record instructions for software installation.
+This repo will record instructions for software installation either on Apocrita or UCL COLCC, or both.
 ## 1. [Octopus](https://github.com/luntergroup/octopus)
 The installation is supported by Ben Talbot.
 
