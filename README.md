@@ -64,7 +64,7 @@ python3.8
 ```
 ## 3. [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/)
 
-The downloader need to sign via a form here https://www.openbioinformatics.org/annovar/annovar_download_form.php; and the download link will be sent via email by the author.
+The downloader need to sign via a form [here](https://www.openbioinformatics.org/annovar/annovar_download_form.php); and the download link will be sent via email by the author.
 
 ```
 ## login the cluster, make/find a folder where you want to store the data:
