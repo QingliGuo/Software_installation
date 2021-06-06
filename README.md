@@ -34,7 +34,7 @@ conda activate oct-env
 conda install -c bioconda/label/cf201901 octopus
 ```
 
-For a newer version [0.7.4] (https://anaconda.org/bioconda/octopus):
+For a newer version [0.7.4](https://anaconda.org/bioconda/octopus) on COLCC:
 ```
 source /share/apps/miniconda3/etc/profile.d/conda.sh
 conda create --name oct-env-0.7.4
@@ -79,4 +79,8 @@ cd /PATH-TO-ANNOVAR/annovar
 ## -downdb "1000g2015aug" is the database+version we would like to download; humandb is a pre-exisiting folder which contains to-be-downloaded data; -buildver hg19 tells the script which version of genome you want to download
 
 perl annotate_variation.pl -downdb 1000g2015aug humandb -buildver hg19
+
+## e.g. to download gnomad30_genome for hg38
+perl annotate_variation.pl -downdb -webfrom annovar -build hg38 gnomad30_genome humandb/
 ```
+More database for Annovar can be found [here](https://annovar.openbioinformatics.org/en/latest/user-guide/download/)
