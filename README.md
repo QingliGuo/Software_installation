@@ -29,15 +29,18 @@ To install older version Octopus_0.5.2 on UCL COLCC:
 qrsh -l tmem=10G, h_rt=01:00:0
 ## source miniconda from /shared/apps/ folder
 source /share/apps/miniconda3/etc/profile.d/conda.sh
-
-## then install octopus as what we did before
-
 conda create --name oct-env
 conda activate oct-env
-conda install libboost=1.67.0
-conda install octopus
+conda install -c bioconda/label/cf201901 octopus
 ```
-In UCL COLCC, the installed package is in ~/.conda/envs/oct-env/bin/octopus
+
+For a newer version [0.7.4] (https://anaconda.org/bioconda/octopus):
+```
+source /share/apps/miniconda3/etc/profile.d/conda.sh
+conda create --name oct-env-0.7.4
+conda activate oct-env-0.7.4
+conda install -c bioconda octopus
+```
 
 ## 2. [SigProfilerMatrixGenerator](https://github.com/AlexandrovLab/SigProfilerMatrixGenerator)
 
