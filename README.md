@@ -84,7 +84,7 @@ perl annotate_variation.pl -downdb 1000g2015aug humandb -buildver hg19
 perl annotate_variation.pl -downdb -webfrom annovar -build hg38 gnomad30_genome humandb/
 ```
 More database for Annovar can be found [here](https://annovar.openbioinformatics.org/en/latest/user-guide/download/)
-## 4. [Samtools](http://www.htslib.org/download/)(1.2)
+## 4. [Samtools and htslib](http://www.htslib.org/download/)(1.2) and [bcftools](http://samtools.github.io/bcftools/howtos/install.html)1.2;
 
 ```
 wget https://github.com/samtools/samtools/releases/download/1.12/samtools-1.12.tar.bz2
@@ -93,9 +93,15 @@ cd samtools-1.12
 ./configure --prefix=/where/to/install
 make
 make install
+export PATH=/where/to/install/bin:$PATH ## for samtools and 
 ```
+Same installation methods for htslib.
 
-set enviromental variables
+For bcftools:
 ```
-export PATH=/where/to/install/bin:$PATH
+git clone --recurse-submodules git://github.com/samtools/htslib.git
+git clone git://github.com/samtools/bcftools.git
+cd bcftools
+make
+export BCFTOOLS_PLUGINS=/path/to/bcftools/plugins ## set enviromental variables; IMPORTANT!!! 
 ```
