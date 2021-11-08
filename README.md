@@ -105,3 +105,19 @@ cd bcftools
 make
 export BCFTOOLS_PLUGINS=/path/to/bcftools/plugins ## set enviromental variables; IMPORTANT!
 ```
+
+## New MacOS set up
+
++ Change the repeating & deleting speed "System preferences" -> keybord -> select "FAST"
+ 
++ Homebrew on MacOS
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+```
+
+Jupyter notebooks
+
+```
+```
