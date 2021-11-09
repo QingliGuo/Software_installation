@@ -106,10 +106,18 @@ make
 export BCFTOOLS_PLUGINS=/path/to/bcftools/plugins ## set enviromental variables; IMPORTANT!
 ```
 
-## New MacOS set up
+# New MacOS set up
 
 + Change the repeating & deleting speed "System preferences" -> keybord -> select "FAST"
- 
++ Change the terminal color setting
+Add the following to ~/.bash_profile file, save and source it.
+```
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+```
+
 + Homebrew on MacOS
 
 ```
@@ -117,7 +125,23 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 ```
 
-Jupyter notebooks
-
++ Install Python
 ```
+## python version manager
+brew install pyenv
+
+## 3.9.2 is my current version, could be any
+pyenv install 3.9.2
+
+## confirgure the enviromental file
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+pyenv local 3.9.2
+brew install jupyter
+```
+
++ Anaconda
+```
+brew install --cask anaconda
+echo "export PATH=$PATH:/opt/homebrew/anaconda3/bin/" >> ~/.bash_profile
+source ~/.bash_profile
 ```
