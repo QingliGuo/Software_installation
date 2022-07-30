@@ -144,4 +144,7 @@ brew install jupyter
 brew install --cask anaconda
 echo "export PATH=$PATH:/opt/homebrew/anaconda3/bin/" >> ~/.bash_profile
 source ~/.bash_profile
+
+## to install packages in certain environment (e.g. an environment called tf).
+conda install -n tf lightgbm
 ```
