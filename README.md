@@ -12,7 +12,7 @@ conda activate oct-env
 conda install -c conda-forge -c bioconda octopus
 ```
 
-To install older version Octopus_0.5.2 on Apocrita:
+To install older version Octopus_0.5.2 on Apocrita (seems not working anymore):
 
 ```
 module load anaconda3/2020.02
